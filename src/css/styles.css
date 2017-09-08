@@ -78,7 +78,8 @@ h3 {
 	margin: 0;
 }
 
-.btn {
+.btn,
+.btn-large {
 	display: inline-block;
 	vertical-align: top;
 	box-sizing: border-box;
@@ -98,9 +99,16 @@ h3 {
 	text-align: center;
 	overflow: hidden;
 	cursor: pointer;
+	margin: 0;
+	padding: 0;
 }
 
-.btn-inverted {
+.btn-large {
+	width: 300px;
+}
+
+.btn-inverted,
+.btn-inverted-large {
 	display: inline-block;
 	vertical-align: top;
 	height: 60px;
@@ -123,6 +131,10 @@ h3 {
 	cursor: pointer;
 }
 
+.btn-inverted-large {
+	width: 300px;
+}
+
 button:active {
 	transform: translate(1px, 3px);
 }
@@ -131,14 +143,16 @@ button:active {
 	position: absolute;
 	bottom: 20px;
 	left: 20px;
-	width: 100%;
+	width: auto;
+	font-size: 0;
 }
 
-.btns-big {
+.btns-large {
 	position: absolute;
 	bottom: 20px;
 	left: 35px;
-	width: 100%;
+	width: auto;
+	font-size: 0;
 }
 
 /* --------------------HEADER------------------------ */
@@ -365,12 +379,6 @@ button:active {
 	overflow: hidden;
 }
 
-.connect .content-wrapper .info-block-border {
-	font-size: 16px;
-	line-height: 22px;
-	color: #979797;
-}
-
 .connect .content-wrapper .info-block::before {
 	content: '';
 	position: absolute;
@@ -396,6 +404,9 @@ button:active {
 	box-shadow: 0 0 20px #fbd951;
 	background-color: #fff;
 	overflow: hidden;
+	font-size: 16px;
+	line-height: 22px;
+	color: #979797;
 }
 
 .connect .content-wrapper .info-block h2 {
@@ -403,7 +414,7 @@ button:active {
 }
 
 .connect .content-wrapper .info-block .text-info {
-	margin: 17px 0 44px;
+	margin: 17px 0 70px;
 	padding: 0 40px;
 }
 
@@ -487,558 +498,41 @@ button:active {
 	margin-right: 7px;
 }
 
-
-/* .connect .content-wrapper .info-block-border:nth-child(2) {
-	box-sizing: border-box;
-	border: 4px solid #ffcd00;
-	border-radius: 1px;
-	box-shadow: 0 0 20px #fbd951;
-	background: url(../images/bg-mobile.png);
-	background-repeat: no-repeat;
-	background-position: bottom;
-	background-color: #fff;
-}
-
-.connect .content-wrapper .info-block-border:nth-child(2) .title {
-	font-family: Montserrat, Arial, Helvetica, sans-serif;
-	font-weight: 700;
-	font-size: 22px;
-	line-height: 15px;
-	color: #141414;
-	display: block;
-	margin-bottom: 22px;
-	padding-top: 40px;
-	padding-left: 35px;
-}
-
-.connect .content-wrapper .info-block-border:nth-child(2) .text-info {
-	font-family: 'Myriad Pro';
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 22px;
-	color: #979797;
-	display: block;
-	margin-bottom: 43px;
-	padding-left: 38px;
-}
-
-.connect .content-wrapper .info-block-border:nth-child(2) .items {
-	color: #2d2d2d;
-	font-size: 14px;
-	font-family: 'Myriad Pro';
-	font-weight: 400;
-	line-height: 40px;
-	list-style-image: url(../images/icon-list-2.png);
-	list-style-position: inside;
-	padding-left: 15px;
-	margin: 0;
-}
-
-.connect .content-wrapper .info-block-border:nth-child(2) .buttons {
-	margin: 112px 16px 0;
-}
-
-.connect .content-wrapper .info-block-border:nth-child(2) button {
-	position: relative;
-	width: 150px;
-	height: 60px;
-	cursor: pointer;
-}
-
-.connect .content-wrapper .info-block-border:nth-child(2) .btn-appstore {
-	background-color: #ffcd00;
-	color: #141414;
-	margin-right: 30px;
-	box-sizing: border-box;
-	font-family: 'Proxima Nova';
-	font-weight: 700;
-	font-size: 14px;
-	line-height: 30px;
-	text-transform: uppercase;
-	text-align: left;
-	padding-left: 49px;
-	outline: none;
-	border-radius: 1px;
-	border: 0;
-	overflow: hidden;
-}
-
-.connect .content-wrapper .info-block-border:nth-child(2) .btn-appstore::before {
-	content: '';
-	position: absolute;
-	top: 20px;
-	left: 26px;
-	background: url(../images/icon-appstore.png) no-repeat;
-	width: 14px;
-	height: 18px;
-}
-
-.connect .content-wrapper .info-block-border:nth-child(2) .btn-google {
-	background-color: #ffcd00;
-	color: #141414;
-	box-sizing: border-box;
-	font-family: 'Proxima Nova', Arial, Helvetica, sans-serif;
-	font-weight: 700;
-	font-size: 14px;
-	line-height: 30px;
-	text-transform: uppercase;
-	outline: none;
-	border-radius: 1px;
-	border: 0;
-	overflow: hidden;
-	padding-left: 38px;
-	text-align: left;
-	margin: auto;
-}
-
-.connect .content-wrapper .info-block-border:nth-child(2) .btn-google::before {
-	content: '';
-	position: absolute;
-	top: 23px;
-	left: 16px;
-	background: url(../images/icon-google-play.png) no-repeat;
-	width: 13px;
-	height: 16px;
-}
-
-.connect .content-wrapper .info-block-border:nth-child(2) .btn-appstore:active,
-.connect .content-wrapper .info-block-border:nth-child(2) .btn-google:active {
-	transform: translate(1px, 3px);
-}
 /* ---------------------THIRD BLOCK------------------- */
 
-/* .connect .content-wrapper .info-block:nth-child(3) {
-	background-color: #f2f2f2;
-	box-sizing: border-box;
-	border-radius: 1px;
-}
-
-.connect .content-wrapper .info-block:nth-child(3)::before {
+.btn-large[data-icon='user']::before {
 	content: '';
-	position: absolute;
-	top: 29px;
-	left: 0;
-	width: 0;
-	height: 0;
-	border-top: 18px solid transparent;
-	border-left: 24px solid #ffc733;
-	border-bottom: 18px solid transparent;
-}
-
-.connect .content-wrapper .info-block:nth-child(3) .title {
-	position: relative;
-	padding-top: 42px;
-	padding-left: 40px;
-	font-family: 'Proxima Nova', Arial, Helvetica, sans-serif;
-	font-weight: 700;
-	font-size: 26px;
-	line-height: 15px;
-	text-transform: uppercase;
-	color: #141414;
-	display: block;
-	margin-bottom: 17px;
-}
-
-.connect .content-wrapper .info-block:nth-child(3) .text-info {
-	position: relative;
-	display: block;
-	padding-left: 40px;
-	text-align: left;
-	font-family: 'Proxima Nova', Arial, Helvetica, sans-serif;
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 30px;
-	color: #979797;
-	margin-bottom: 64px;
-}
-
-.connect .content-wrapper .info-block:nth-child(3) img {
-	position: relative;
-	overflow: hidden;
-	display: block;
-	width: 100%;
-}
-
-.connect .content-wrapper .info-block:nth-child(3) .buttons {
-	margin: 44px 37px 0;
-}
-
-.connect .content-wrapper .info-block:nth-child(3) button {
-	position: relative;
-	width: 300px;
-	height: 60px;
-	cursor: pointer;
-}
-
-.connect .content-wrapper .info-block:nth-child(3) .buttons .btn-login {
 	display: inline-block;
-	font-family: 'Proxima Nova', Arial, Helvetica, sans-serif;
-	font-weight: 700;
-	color: #141414;
-	font-size: 14px;
-	line-height: 30px;
-	text-transform: uppercase;
-	outline: none;
-	border: none;
-	border-radius: 1px;
-	background-color: #ffcd00;
-	padding-left: 138px;
-	text-align: left;
-	overflow: hidden;
-}
-
-.connect .content-wrapper .info-block:nth-child(3) .btn-login::before {
-	content: '';
-	position: absolute;
-	top: 23px;
-	left: 112px;
-	background: url(../images/icon-login.png) no-repeat;
-	width: 16px;
-	height: 16px;
-}
-
-.connect .content-wrapper .info-block:nth-child(3) .btn-login:active {
-	transform: translate(1px, 3px);
+	vertical-align: middle;
+	width: 22px;
+	height: 22px;
+	background: url(../images/icon-login.png) no-repeat 0 0;
+	margin-right: 7px;
 }
 
 /* ---------------------FOURTH BLOCK------------------- */
 
-/* .connect .content-wrapper .info-block:nth-child(4) {
-	background-color: #f2f2f2;
-	box-sizing: border-box;
-	border-radius: 1px;
-}
-
-.connect .content-wrapper .info-block:nth-child(4)::before {
-	content: '';
-	position: absolute;
-	top: 29px;
-	left: 0;
-	width: 0;
-	height: 0;
-	border-top: 18px solid transparent;
-	border-left: 24px solid #ffc733;
-	border-bottom: 18px solid transparent;
-}
-
-.connect .content-wrapper .info-block:nth-child(4) .title {
-	position: relative;
-	padding-top: 42px;
-	padding-left: 40px;
-	font-family: 'Proxima Nova', Arial, Helvetica, sans-serif;
-	font-weight: 700;
-	font-size: 26px;
-	line-height: 15px;
-	text-transform: uppercase;
-	color: #141414;
-	display: block;
-	margin-bottom: 17px;
-}
-
-.connect .content-wrapper .info-block:nth-child(4) .text-info {
-	position: relative;
-	display: block;
-	padding-left: 40px;
-	text-align: left;
-	font-family: 'Proxima Nova', Arial, Helvetica, sans-serif;
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 22px;
-	color: #979797;
-	margin-bottom: 70px;
-}
-
-.connect .content-wrapper .info-block:nth-child(4) img {
-	position: relative;
-	overflow: hidden;
-	display: block;
-	width: 100%;
-}
-
-.connect .content-wrapper .info-block:nth-child(4) .buttons {
-	margin: 28px 35px 0;
-}
-
-.connect .content-wrapper .info-block:nth-child(4) button {
-	position: relative;
-	width: 300px;
-	height: 60px;
-	cursor: pointer;
-}
-
-.connect .content-wrapper .info-block:nth-child(4) .buttons .btn-upgrade {
-	display: inline-block;
-	font-family: 'Proxima Nova', Arial, Helvetica, sans-serif;
-	font-weight: 700;
-	color: #141414;
-	font-size: 14px;
-	line-height: 30px;
-	text-transform: uppercase;
-	outline: none;
-	border: none;
-	border-radius: 1px;
-	background-color: #ffcd00;
-	padding-left: 138px;
-	text-align: left;
-	overflow: hidden;
-}
-
-.connect .content-wrapper .info-block:nth-child(4) .btn-upgrade::before {
-	content: '';
-	position: absolute;
-	top: 23px;
-	left: 112px;
-	background: url(../images/icon-login.png) no-repeat;
-	width: 16px;
-	height: 16px;
-}
-
-.connect .content-wrapper .info-block:nth-child(4) .btn-upgrade:active {
-	transform: translate(1px, 3px);
-}
-
-/* ---------------------FIFTH BLOCK------------------- */
-
-/* .connect .content-wrapper .info-block:nth-child(5) {
-	background-color: #f2f2f2;
-	box-sizing: border-box;
-	border-radius: 1px;
-}
-
-.connect .content-wrapper .info-block:nth-child(5)::before {
-	content: '';
-	position: absolute;
-	top: 31px;
-	left: 0;
-	width: 0;
-	height: 0;
-	border-top: 18px solid transparent;
-	border-left: 24px solid #ffc733;
-	border-bottom: 18px solid transparent;
-}
-
-.connect .content-wrapper .info-block:nth-child(5) .title {
-	position: relative;
-	padding-top: 44px;
-	padding-left: 40px;
-	font-family: 'Proxima Nova', Arial, Helvetica, sans-serif;
-	font-weight: 700;
-	font-size: 26px;
-	line-height: 15px;
-	text-transform: uppercase;
-	color: #141414;
-	display: block;
-	margin-bottom: 15px;
-}
-
-.connect .content-wrapper .info-block:nth-child(5) .text-info {
-	position: relative;
-	display: block;
-	padding-left: 40px;
-	text-align: left;
-	font-family: 'Proxima Nova', Arial, Helvetica, sans-serif;
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 22px;
-	color: #979797;
-	margin-bottom: 70px;
-}
-
-.connect .content-wrapper .info-block:nth-child(5) img {
-	position: relative;
-	overflow: hidden;
-	display: block;
-	width: 100%;
-}
-
-.connect .content-wrapper .info-block:nth-child(5) .buttons {
-	margin: 25px 20px 0;
-}
-
-.connect .content-wrapper .info-block:nth-child(5) button {
-	position: relative;
-	width: 150px;
-	height: 60px;
-	cursor: pointer;
-}
-
-.connect .content-wrapper .info-block:nth-child(5) .buttons .btn-download {
-	margin-right: 30px;
-	box-sizing: border-box;
-	font-family: 'Proxima Nova', Arial, Helvetica, sans-serif;
-	font-weight: 700;
-	color: #141414;
-	font-size: 14px;
-	line-height: 1;
-	text-transform: uppercase;
-	outline: none;
-	border: 2px solid #fbd951;
-	border-radius: 1px;
-	background: none;
-	padding: 20px 10px;
-	text-align: left;
-	overflow: hidden;
-	white-space: nowrap;
-}
-
-.connect .content-wrapper .info-block:nth-child(5) .btn-download::before {
+.btn-large[data-icon='upgrade']::before {
 	content: '';
 	display: inline-block;
 	vertical-align: middle;
-	background: url(../images/icon-download.png) no-repeat;
-	width: 20px;
-	height: 21px;
-	margin-right: 16px;
-	margin-top: -2px;
-}
-
-.connect .content-wrapper .info-block:nth-child(5) .buttons .btn-login {
-	display: inline-block;
-	font-family: 'Proxima Nova', Arial, Helvetica, sans-serif;
-	font-weight: 700;
-	color: #141414;
-	font-size: 14px;
-	line-height: 30px;
-	text-transform: uppercase;
-	outline: none;
-	border: none;
-	border-radius: 1px;
-	background-color: #ffcd00;
-	padding-left: 61px;
-	text-align: left;
-	overflow: hidden;
-}
-
-.connect .content-wrapper .info-block:nth-child(5) .btn-login::before {
-	content: '';
-	position: absolute;
-	top: 23px;
-	left: 36px;
-	background: url(../images/icon-login.png) no-repeat;
-	width: 16px;
-	height: 16px;
-}
-
-.connect .content-wrapper .info-block:nth-child(5) .btn-download:active,
-.connect .content-wrapper .info-block:nth-child(5) .btn-login:active {
-	transform: translate(1px, 3px);
+	width: 22px;
+	height: 22px;
+	background: url(../images/icon-login.png) no-repeat 0 0;
+	margin-right: 7px;
 }
 
 /* ---------------------SIXTH BLOCK------------------- */
 
-/* .connect .content-wrapper .info-block:nth-child(6) {
-	background-color: #f2f2f2;
-	box-sizing: border-box;
-	border-radius: 1px;
-}
-
-.connect .content-wrapper .info-block:nth-child(6)::before {
+.btn[data-icon='connect']::before {
 	content: '';
-	position: absolute;
-	top: 31px;
-	left: 0;
-	width: 0;
-	height: 0;
-	border-top: 18px solid transparent;
-	border-left: 24px solid #ffc733;
-	border-bottom: 18px solid transparent;
-}
-
-.connect .content-wrapper .info-block:nth-child(6) .title {
-	position: relative;
-	padding-top: 44px;
-	padding-left: 40px;
-	font-family: 'Proxima Nova', Arial, Helvetica, sans-serif;
-	font-weight: 700;
-	font-size: 26px;
-	line-height: 15px;
-	text-transform: uppercase;
-	color: #141414;
-	display: block;
-	margin-bottom: 16px;
-}
-
-.connect .content-wrapper .info-block:nth-child(6) .text-info {
-	position: relative;
-	display: block;
-	padding-left: 40px;
-	text-align: left;
-	font-family: 'Proxima Nova', Arial, Helvetica, sans-serif;
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 30px;
-	color: #979797;
-	margin-bottom: 106px;
-}
-
-.connect .content-wrapper .info-block:nth-child(6) img {
-	position: relative;
-	overflow: hidden;
-	display: block;
-	width: 100%;
-}
-
-.connect .content-wrapper .info-block:nth-child(6) .buttons {
-	margin: 43px 20px 0;
-}
-
-.connect .content-wrapper .info-block:nth-child(6) button {
-	position: relative;
-	width: 150px;
-	height: 60px;
-	cursor: pointer;
-}
-
-.connect .content-wrapper .info-block:nth-child(6) .buttons .btn-works {
-	margin-right: 30px;
-	box-sizing: border-box;
-	font-family: 'Proxima Nova', Arial, Helvetica, sans-serif;
-	font-weight: 700;
-	color: #141414;
-	font-size: 14px;
-	line-height: 30px;
-	text-transform: uppercase;
-	outline: none;
-	border: 2px solid #fbd951;
-	border-radius: 1px;
-	background: none;
-	text-align: center;
-	overflow: hidden;
-}
-
-.connect .content-wrapper .info-block:nth-child(6) .buttons .btn-connect {
 	display: inline-block;
-	font-family: 'Proxima Nova', Arial, Helvetica, sans-serif;
-	font-weight: 700;
-	color: #141414;
-	font-size: 14px;
-	line-height: 30px;
-	text-transform: uppercase;
-	outline: none;
-	border: none;
-	border-radius: 1px;
-	background-color: #ffcd00;
-	padding-left: 54px;
-	text-align: left;
-	overflow: hidden;
+	vertical-align: middle;
+	width: 22px;
+	height: 22px;
+	background: url(../images/icon-connect.png) no-repeat 0 0;
+	margin-right: 7px;
 }
-
-.connect .content-wrapper .info-block:nth-child(6) .btn-connect::before {
-	content: '';
-	position: absolute;
-	top: 20px;
-	left: 24px;
-	background: url(../images/icon-connect.png) no-repeat;
-	width: 20px;
-	height: 20px;
-}
-
-.connect .content-wrapper .info-block:nth-child(6) .btn-works:active,
-.connect .content-wrapper .info-block:nth-child(6) .btn-connect:active {
-	transform: translate(1px, 3px);
-}
-
-*/
 
 @media (min-width: 684px) {
 	.header .buttons {
