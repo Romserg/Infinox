@@ -44,7 +44,7 @@ body {
 }
 
 .wrapper {
-	min-width: 420px;
+	width: 420px;
 	margin: 0 auto;
 }
 
@@ -84,7 +84,7 @@ h3 {
 	vertical-align: top;
 	box-sizing: border-box;
 	height: 60px;
-	min-width: 150px;
+	width: 150px;
 	white-space: nowrap;
 	font-family: 'Proxima Nova', Arial, Helvetica, sans-serif;
 	font-weight: 700;
@@ -103,7 +103,8 @@ h3 {
 	padding: 0;
 }
 
-.btn-large {
+.btn-large,
+.btn-inverted-large {
 	width: 300px;
 }
 
@@ -131,10 +132,6 @@ h3 {
 	cursor: pointer;
 }
 
-.btn-inverted-large {
-	width: 300px;
-}
-
 button:active {
 	transform: translate(1px, 3px);
 }
@@ -153,6 +150,22 @@ button:active {
 	left: 35px;
 	width: auto;
 	font-size: 0;
+}
+
+.items {
+	color: #2d2d2d;
+	font-size: 14px;
+	font-family: 'Myriad Pro';
+	font-weight: 400;
+	line-height: 40px;
+	list-style-image: url(../images/icon-list.png);
+	text-align: left;
+}
+
+section {
+	position: relative;
+	width: 100%;
+	height: auto;
 }
 
 /* --------------------HEADER------------------------ */
@@ -452,16 +465,8 @@ button:active {
 /* ---------------------SECOND BLOCK------------------- */
 
 .connect .content-wrapper .info-block-border .items {
-	color: #2d2d2d;
-	font-size: 14px;
-	font-family: 'Myriad Pro';
-	font-weight: 400;
-	line-height: 40px;
-	list-style-image: url(../images/icon-list-2.png);
-	list-style-position: inside;
-	padding-left: 15px;
+	padding-left: 35px;
 	margin: 0;
-	text-align: left;
 }
 
 .connect .content-wrapper .info-block-border .btn:nth-child(1) {
@@ -534,14 +539,134 @@ button:active {
 	margin-right: 7px;
 }
 
-@media (min-width: 684px) {
-	.header .buttons {
-		margin-top: 0;
-	}
+.about {
+	background: url(../images/bg-about.png) no-repeat -400px 0;
 }
 
-@media (min-width: 793px) {
-	.header .buttons {
-		margin-left: 0;
-	}
+.about .content-wrapper {
+	box-sizing: border-box;
+	padding: 75px 25px 0;
+}
+
+.about h2 {
+	color: #fff;
+	font-size: 47px;
+	line-height: 1;
+	text-align: left;
+}
+
+.about h2::after {
+	content: '';
+	position: absolute;
+	left: 235px;
+	top: 42px;
+	width: 26px;
+	height: 26px;
+	background: url(../images/icon-stats.png) no-repeat 0 0;
+}
+
+.about .content-wrapper .items {
+	font-family: 'Proxima Nova';
+	font-weight: 700;
+	color: #fff;
+	padding-left: 20px;
+	font-size: 20px;
+	line-height: 44px;
+	margin: 50px 0 0;
+	padding-bottom: 170px;
+}
+
+.about .content-wrapper .item .colortext {
+	font-family: 'Proxima Nova';
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 23px;
+	color: #ffcd00;
+	text-transform: uppercase;
+}
+
+.about .content-wrapper .item:nth-child(1) .colortext {
+	font-family: 'Proxima Nova';
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 23px;
+	color: #ffcd00;
+	text-transform: uppercase;
+}
+
+.about .content-wrapper .btns-large {
+	left: 117px;
+}
+
+.about .content-wrapper .btn-large {
+	width: 180px;
+}
+
+.guide {
+	background: url(../images/bg-guide.png) no-repeat 45px 44px;
+	background-size: 420px 280px;
+	background-color: #fff;
+	border-bottom: 10px solid #ffcd00;
+}
+
+.guide .content-wrapper {
+	box-sizing: border-box;
+	padding: 100px 14px 0 23px;
+}
+
+.guide .content-wrapper .label {
+	font-family: 'Proxima Nova';
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 1;
+	color: #141414;
+	text-transform: uppercase;
+	width: 200px;
+	height: 100px;
+}
+
+.guide .content-wrapper .label::after {
+	content: '';
+	position: absolute;
+	left: 192px;
+	top: 78px;
+	width: 31px;
+	height: 31px;
+	background: url(../images/icon-book.png) no-repeat 0 0;
+}
+
+.guide .content-wrapper .text {
+	font-size: 20px;
+	line-height: 22px;
+	color: #141414;
+	margin-top: 170px;
+}
+
+.guide .content-wrapper p {
+	font-size: 16px;
+	line-height: 22px;
+	color: #979797;
+	margin-top: 35px;
+	margin-bottom: 40px;
+}
+
+.guide .content-wrapper .btns-large {
+	position: relative;
+	left: 0;
+	bottom: 0;
+}
+
+.guide .content-wrapper .btns-large .btn {
+	width: 100%;
+}
+
+.guide .content-wrapper .btns-large div {
+	font-family: 'Proxima Nova';
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 22px;
+	color: #979797;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 27px;
 }
