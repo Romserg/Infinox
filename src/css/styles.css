@@ -53,9 +53,9 @@ body {
 	height: 100%;
 	width: 100%;
 	box-sizing: border-box;
-	padding: 60px 24px 0;
+	padding: 60px 9px 0;
 	display: block;
-	max-width: 1250px;
+	max-width: 1280px;
 	border: 0 transparent solid;
 	border-left-width: 15px;
 	border-right-width: 15px;
@@ -132,15 +132,36 @@ button:active {
 	transform: translate(1px, 3px);
 }
 
-section .btns {
-	position: absolute;
-	font-size: 0;
-}
-
 section {
 	position: relative;
 	width: 100%;
 	height: auto;
+}
+
+.header .btns {
+	display: none;
+}
+
+.connect article .btns {
+	position: absolute;
+	width: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 20px;
+	font-size: 0;
+}
+
+.connect article:nth-child(1) .btn:nth-child(1),
+.connect article:nth-child(2) .btn:nth-child(1),
+.connect article:nth-child(5) .btn:nth-child(1),
+.connect article:nth-child(6) .btn:nth-child(1) {
+	margin-right: 30px;
+}
+
+.connect .info-block img {
+	margin-top: 50px;
+	padding: 0;
+	margin-left: -40px;
 }
 
 /* --------------------HEADER------------------------ */
@@ -214,12 +235,14 @@ section {
 .header h1 {
 	padding-top: 100px;
 	text-align: left;
+	width: 420px;
 }
 
 header p {
 	padding-top: 25px;
 	text-align: left;
 	padding-bottom: 200px;
+	width: 390px;
 }
 
 .header p,
@@ -272,7 +295,7 @@ header p {
 	background: url(../images/header-photo-bg.png) no-repeat;
 	box-shadow: inset 320px 0 150px 70px rgba(0, 0, 0, 0.7);
 	min-width: 420px;
-	max-width: 700px;
+	max-width: 792px;
 	height: 320px;
 	background-size: 100% 100%;
 	margin-bottom: 133px;
@@ -402,6 +425,10 @@ header p {
 	background-color: #fff;
 }
 
+.connect .info-block.border img {
+	margin-left: 0;
+}
+
 .connect .info-block .items {
 	color: #2d2d2d;
 	font-size: 14px;
@@ -421,109 +448,68 @@ header p {
 	text-align: left;
 	padding-top: 20px;
 }
+
+.connect .btn[data-icon]::before {
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	width: 22px;
+	height: 22px;
+	margin-right: 7px;
+}
+
 /* ---------------------FIRST BLOCK------------------- */
 
 .btn[data-icon='user']::before {
-	content: '';
-	display: inline-block;
-	vertical-align: middle;
-	width: 22px;
-	height: 22px;
 	background: url(../images/icon-login.png) no-repeat 0 0;
-	margin-right: 7px;
 }
 
 .btn[data-icon='download']::before {
-	content: '';
-	display: inline-block;
-	vertical-align: middle;
-	width: 22px;
-	height: 22px;
 	background: url(../images/icon-download.png) no-repeat 0 0;
-	margin-right: 7px;
 }
 
 .connect .info-block:nth-child(1) {
-	margin-top: -55px;
+	margin-top: -24px;
 }
 
 /* ---------------------SECOND BLOCK------------------- */
 
-.connect .info-block.border .btn:nth-child(1) {
-	margin-right: 30px;
-}
-
 .connect .info-block.border h3 {
-	text-align: left;
+	text-align: center;
 	font-size: 22px;
 }
 
-.connect .info-block.border img {
-	margin-top: 44px;
-	padding: 0 35px;
-}
-
 .btn[data-icon='apple']::before {
-	content: '';
-	display: inline-block;
-	vertical-align: middle;
-	width: 22px;
-	height: 22px;
 	background: url(../images/icon-appstore.png) no-repeat 0 0;
-	margin-right: 7px;
 }
 
 .btn[data-icon='google']::before {
-	content: '';
-	display: inline-block;
-	vertical-align: middle;
-	width: 22px;
-	height: 22px;
 	background: url(../images/icon-google-play.png) no-repeat 0 0;
-	margin-right: 7px;
 }
 
 /* ---------------------THIRD BLOCK------------------- */
 
 .btn-large[data-icon='user']::before {
-	content: '';
-	display: inline-block;
-	vertical-align: middle;
-	width: 22px;
-	height: 22px;
 	background: url(../images/icon-login.png) no-repeat 0 0;
-	margin-right: 7px;
 }
 
 /* ---------------------FOURTH BLOCK------------------- */
 
 .btn[data-icon='upgrade']::before {
-	content: '';
-	display: inline-block;
-	vertical-align: middle;
-	width: 22px;
-	height: 22px;
 	background: url(../images/icon-login.png) no-repeat 0 0;
-	margin-right: 7px;
 }
 
 /* ---------------------SIXTH BLOCK------------------- */
 
 .btn[data-icon='connect']::before {
-	content: '';
-	display: inline-block;
-	vertical-align: middle;
-	width: 22px;
-	height: 22px;
 	background: url(../images/icon-connect.png) no-repeat 0 0;
-	margin-right: 7px;
 }
 
 .about {
 	background: url(../images/bg-about.png) no-repeat -400px 0;
 }
 
-.about .content-wrapper {
+.about .data-wrapper {
 	box-sizing: border-box;
 	padding: 75px 25px 0;
 }
@@ -574,14 +560,6 @@ header p {
 	text-transform: uppercase;
 }
 
-.about .btns-large {
-	left: 117px;
-}
-
-.about .btn-large {
-	width: 180px;
-}
-
 .guide {
 	background: url(../images/bg-guide.png) no-repeat 45px 44px;
 	background-size: 420px 280px;
@@ -589,12 +567,12 @@ header p {
 	border-bottom: 10px solid #ffcd00;
 }
 
-.guide .content-wrapper {
+.guide .data-wrapper {
 	box-sizing: border-box;
 	padding: 100px 14px 0 23px;
 }
 
-.guide .content-wrapper .label {
+.guide .label {
 	font-family: 'Proxima Nova';
 	font-weight: 700;
 	font-size: 40px;
@@ -605,7 +583,7 @@ header p {
 	height: 100px;
 }
 
-.guide .content-wrapper .label::after {
+.guide .label::after {
 	content: '';
 	position: absolute;
 	left: 192px;
@@ -637,11 +615,6 @@ header p {
 	width: 380px;
 }
 
-.guide .btns-large .btn {
-	width: 100%;
-	margin: 0;
-}
-
 .guide .content-wrapper .btns-large div {
 	font-family: 'Proxima Nova';
 	font-weight: 400;
@@ -658,19 +631,109 @@ header p {
 	box-sizing: border-box;
 }
 
-.benefit h2 {
+.benefit .label {
 	font-size: 40px;
 	line-height: 40px;
 	padding-top: 85px;
 	padding-left: 22px;
 }
 
-.btn[data-icon]::before {
-	content: '';
-	display: inline-block;
-	vertical-align: middle;
-	width: 22px;
-	height: 22px;
-	outline: 10px dotted pink;
-	margin-right: 7px;
+@media (min-width: 793px) {
+	.connect .content-wrapper {
+		border-left-width: 0;
+		border-right-width: 0;
+	}
+
+	.connect article:nth-child(even) {
+		margin-left: 30px;
+	}
+
+	.connect article:nth-child(2) {
+		border: inset;
+		margin-top: -24px;
+	}
+
+	.header {
+		height: 900px;
+	}
+
+	.header .content-wrapper {
+		padding: 70px 0 0;
+		border-left-width: 14px;
+		border-right-width: 14px;
+	}
+
+	.header h1 {
+		padding-top: 175px;
+	}
+
+	.header p {
+		padding-top: 60px;
+	}
+
+	.header .btn-header {
+		bottom: 200px;
+		left: 0;
+	}
+
+	.header .intro-video {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+		max-width: 100%;
+		max-height: 100%;
+		height: 100%;
+		width: 100%;
+		background-size: 1500px 1220px;
+		background-position: -100px -320px;
+	}
+
+	.header .btns {
+		display: block;
+		position: absolute;
+		top: 65px;
+		right: 58px;
+	}
+
+	.header .btn.inverted {
+		color: #fefefe;
+	}
+
+	.header .btn {
+		width: 160px;
+		background: none;
+		color: #ffcd00;
+	}
+
+	.header .position {
+		bottom: 184px;
+	}
+}
+
+@media (min-width: 1167px) {
+	.connect .content-wrapper {
+		padding: 0;
+	}
+
+	.connect article {
+		margin-left: 30px;
+	}
+
+	.connect article:nth-child(1),
+	.connect article:nth-child(4) {
+		margin-left: 0;
+	}
+
+	.connect article:nth-child(2) {
+		margin-top: -52px;
+	}
+
+	.connect article:nth-child(5) {
+		margin-top: -24px;
+	}
+
+	.connect article:nth-child(3) {
+		margin-top: -24px;
+	}
 }
