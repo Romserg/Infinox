@@ -292,18 +292,10 @@ header p {
 
 .header .intro-video {
 	position: relative;
-	background: url(../images/header-photo-bg.png) no-repeat;
-	box-shadow: inset 320px 0 150px 70px rgba(0, 0, 0, 0.7);
-	min-width: 420px;
-	max-width: 792px;
-	height: 320px;
+	background: url(../images/bg-header-mobile.png) no-repeat 0 0;
+	min-height: 320px;
 	background-size: 100% 100%;
-	margin-bottom: 133px;
-}
-
-.header .intro-video .bg-image {
-	width: 100%;
-	position: relative;
+	margin-bottom: 134px;
 }
 
 .header .intro-video .icon {
@@ -531,11 +523,11 @@ header p {
 	background: url(../images/icon-stats.png) no-repeat 0 0;
 }
 
-.about .items {
+.about ul {
 	font-family: 'Proxima Nova';
 	font-weight: 700;
 	color: #fff;
-	padding-left: 20px;
+	padding-left: 0;
 	font-size: 20px;
 	line-height: 44px;
 	margin: 50px 0 0;
@@ -551,13 +543,22 @@ header p {
 	text-transform: uppercase;
 }
 
-.about .item:nth-child(1) .colortext {
-	font-family: 'Proxima Nova';
-	font-weight: 700;
-	font-size: 30px;
-	line-height: 23px;
-	color: #ffcd00;
-	text-transform: uppercase;
+.about .items li {
+	list-style: none;
+	background: url(../images/icon-list.png) no-repeat 0 40px;
+	padding-left: 30px;
+}
+
+.about .btns {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 20px;
+	font-size: 0;
+}
+
+.about .btns .btn {
+	width: 180px;
 }
 
 .guide {
@@ -569,7 +570,7 @@ header p {
 
 .guide .data-wrapper {
 	box-sizing: border-box;
-	padding: 100px 14px 0 23px;
+	padding: 100px 25px 0;
 }
 
 .guide .label {
@@ -587,35 +588,36 @@ header p {
 	content: '';
 	position: absolute;
 	left: 192px;
-	top: 78px;
+	top: 70px;
 	width: 31px;
 	height: 31px;
 	background: url(../images/icon-book.png) no-repeat 0 0;
 }
 
-.guide .content-wrapper .text {
+.guide .text {
 	font-size: 20px;
 	line-height: 22px;
 	color: #141414;
 	margin-top: 170px;
 }
 
-.guide .content-wrapper p {
+.guide p {
 	font-size: 16px;
 	line-height: 22px;
 	color: #979797;
-	margin-top: 35px;
-	margin-bottom: 40px;
+	margin: 35px 0 0;
+	padding-bottom: 300px;
 }
 
-.guide .content-wrapper .btns-large {
-	position: relative;
-	left: 0;
+.guide .btns {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
 	bottom: 0;
 	width: 380px;
 }
 
-.guide .content-wrapper .btns-large div {
+.guide .btns > div {
 	font-family: 'Proxima Nova';
 	font-weight: 400;
 	font-size: 12px;
@@ -624,6 +626,10 @@ header p {
 	text-align: center;
 	margin-top: 20px;
 	margin-bottom: 27px;
+}
+
+.guide .btn {
+	width: 370px;
 }
 
 .benefit {
@@ -639,6 +645,12 @@ header p {
 }
 
 @media (min-width: 793px) {
+	.header {
+		height: 900px;
+		background: url(../images/bg-header-tablet.png) no-repeat 0 0;
+		background-size: 100% 100%;
+	}
+
 	.connect .content-wrapper {
 		border-left-width: 0;
 		border-right-width: 0;
@@ -651,10 +663,6 @@ header p {
 	.connect article:nth-child(2) {
 		border: inset;
 		margin-top: -24px;
-	}
-
-	.header {
-		height: 900px;
 	}
 
 	.header .content-wrapper {
@@ -676,7 +684,7 @@ header p {
 		left: 0;
 	}
 
-	.header .intro-video {
+	/* .header .intro-video {
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -687,7 +695,7 @@ header p {
 		width: 100%;
 		background-size: 100%;
 		background-position: 0 0;
-	}
+	} */
 
 	.header .btns {
 		display: block;
@@ -712,6 +720,12 @@ header p {
 }
 
 @media (min-width: 1167px) {
+	.header {
+		height: 900px;
+		background: url(../images/bg-header-desktop.png) no-repeat 0 0;
+		background-size: 100% 100%;
+	}
+
 	.connect .content-wrapper {
 		padding: 0;
 	}
