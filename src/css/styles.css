@@ -119,7 +119,7 @@ h4 {
 	text-transform: uppercase;
 	outline: none;
 	border: none;
-	border-radius: 1px;
+	border-radius: 2px;
 	background-color: #ffcd00;
 	text-align: center;
 	overflow: hidden;
@@ -407,6 +407,7 @@ button:active {
 	font-weight: 400;
 	text-align: left;
 	list-style: none;
+	margin: 45px 0 0;
 	padding: 0;
 }
 
@@ -483,7 +484,6 @@ button:active {
 }
 
 .page-wrapper .about .content-wrapper {
-	box-sizing: border-box;
 	padding: 0 10px;
 }
 
@@ -557,7 +557,6 @@ button:active {
 }
 
 .page-wrapper .guide .content-wrapper {
-	box-sizing: border-box;
 	padding: 0 10px;
 	text-align: left;
 }
@@ -775,16 +774,136 @@ button:active {
 	margin-top: 63px;
 }
 
+.page-wrapper .benefit .text {
+	padding: 30px 0 15px;
+}
+
 /* -----------------------SECTION-BUSINESS------------------- */
 
 .page-wrapper .business {
 	background-color: #f8f8f8;
 	color: #979797;
-	padding-top: 27px;
+	font-size: 16px;
+	line-height: 20px;
+	border-bottom: 10px solid #ffcd00;
 }
 
 .page-wrapper .business .content-wrapper {
 	text-align: left;
+	padding: 0 10px;
+}
+
+.page-wrapper .business .btns {
+	width: 100%;
+	text-align: right;
+}
+
+.page-wrapper .business .btns .btn {
+	position: relative;
+	margin: 28px 0 0 24px;
+	width: 100%;
+	text-align: left;
+	padding-left: 40px;
+}
+
+.page-wrapper .business .btns .btn::after {
+	content: '';
+	position: absolute;
+	top: 27px;
+	right: 46px;
+	width: 0;
+	height: 0;
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-top: 6px solid #000;
+}
+
+.page-wrapper .business h2 {
+	font-family: Montserrat, Arial, Helvetica, sans-serif;
+	padding: 42px 0 0;
+	font-size: 36px;
+	line-height: 43px;
+}
+
+.page-wrapper .business .items {
+	margin: 36px 0 0;
+	padding: 0;
+	max-width: 383px;
+}
+
+.page-wrapper .business .items .item {
+	list-style: none;
+	background: url(../images/icon-list.png) no-repeat 0 24px;
+	padding: 20px 30px;
+}
+
+/* -----------------------SECTION-PLATFORMS------------------- */
+
+.page-wrapper .platforms {
+	background-color: #fff;
+	color: #979797;
+	font-size: 14px;
+	line-height: 30px;
+}
+
+.page-wrapper .platforms .content-wrapper {
+	padding: 0 30px;
+	text-align: left;
+}
+
+.page-wrapper .platforms h2 {
+	font-family: Montserrat, Arial, Helvetica, sans-serif;
+	padding: 48px 0 0;
+	font-size: 36px;
+	line-height: 43px;
+}
+
+.page-wrapper .platforms .items {
+	box-sizing: border-box;
+	margin: 36px 0 0;
+	padding: 20px 0;
+	list-style: none;
+	font-family: 'Proxima Nova', Arial, Helvetica, sans-serif;
+	font-weight: 700;
+	font-size: 0;
+	text-transform: uppercase;
+	line-height: 30px;
+}
+
+.page-wrapper .platforms .items .item {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 14px;
+	margin: 0 0 60px;
+	padding: 10px 0 0 72px;
+	min-height: 50px;
+	background: no-repeat 0 0;
+	box-sizing: border-box;
+	min-width: 300px;
+}
+
+.page-wrapper .platforms .item.web {
+	background-image: url(../images/icon-platforms-1.png);
+}
+
+.page-wrapper .platforms .item.windows {
+	background-image: url(../images/icon-platforms-2.png);
+}
+
+.page-wrapper .platforms .item.ios {
+	background-image: url(../images/icon-platforms-3.png);
+}
+
+.page-wrapper .platforms .item.android {
+	background-image: url(../images/icon-platforms-4.png);
+}
+
+.page-wrapper .platforms .item.cuboid {
+	background-image: url(../images/icon-platforms-1.png);
+}
+
+.page-wrapper .platforms .item.mac {
+	background-image: url(../images/icon-platforms-5.png);
 }
 
 @media (min-width: 793px) {
