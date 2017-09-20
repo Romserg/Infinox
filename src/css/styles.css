@@ -57,7 +57,8 @@ body {
 	border: 0 transparent solid;
 	border-left-width: 14px;
 	border-right-width: 14px;
-	margin: auto;
+	margin-left: auto;
+	margin-right: auto;
 	text-align: center;
 }
 
@@ -91,6 +92,31 @@ h3 {
 	display: block;
 	text-transform: uppercase;
 	margin: 0;
+}
+
+.page-footer h3 {
+	font-family: 'Proxima Nova', Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	line-height: 43px;
+	color: #fefefe;
+	margin-bottom: 28px;
+}
+
+.page-footer a {
+	text-decoration: none;
+	display: block;
+}
+
+.page-footer .legal a {
+	margin: 21px 0;
+	text-transform: uppercase;
+	line-height: 30px;
+	color: #646464;
+}
+
+.page-content .info-block.border h3 {
+	text-align: center;
+	font-size: 22px;
 }
 
 h4 {
@@ -166,6 +192,7 @@ button:active {
 	position: relative;
 	box-sizing: border-box;
 	padding-top: 60px;
+	padding-bottom: 132px;
 }
 
 .page-header .content-wrapper {
@@ -219,6 +246,7 @@ button:active {
 
 .page-header h1 {
 	text-align: left;
+	margin-bottom: 40px;
 }
 
 .page-header p,
@@ -232,9 +260,8 @@ button:active {
 }
 
 .page-header p {
-	padding-top: 25px;
 	text-align: left;
-	padding-bottom: 200px;
+	margin-bottom: 75px;
 }
 
 .page-header .colortext {
@@ -242,9 +269,7 @@ button:active {
 }
 
 .page-header .btn-header {
-	position: absolute;
-	bottom: 60px;
-	left: 10px;
+	margin-bottom: 60px;
 	outline: none;
 	border: 0;
 	border-radius: 6px;
@@ -278,39 +303,6 @@ button:active {
 	background-size: cover;
 	height: 320px;
 	width: 100%;
-	margin-bottom: 133px;
-}
-
-.page-header .intro-video .icon {
-	position: absolute;
-	bottom: 25px;
-	left: 35px;
-	background: none;
-	border: 0;
-	outline: none;
-	cursor: pointer;
-}
-
-.page-header .intro-video .icon img {
-	display: block;
-	height: 49px;
-	width: 49px;
-	margin-bottom: 9px;
-}
-
-.page-header .intro-video .icon .btn-text {
-	font-family: Montserrat, Arial, Helvetica, sans-serif;
-	font-weight: 700;
-	color: #ffcd00;
-	font-size: 7px;
-	text-transform: uppercase;
-}
-
-.page-header .intro-video .icon:active {
-	transform: translate(1px, 3px);
-}
-
-.page-header .text-block {
 	font-family: Montserrat, Arial, Helvetica, sans-serif;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -318,27 +310,74 @@ button:active {
 	font-size: 14px;
 }
 
-.page-header .intro-video .text-info {
+.page-header .video-control {
+	display: none;
 	position: absolute;
-	right: 24px;
-	bottom: 61px;
+	width: 100%;
+	height: 105px;
+	bottom: 25px;
+}
+
+.page-header .intro-video .video-control {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 105px;
+	bottom: 25px;
+}
+
+.page-header .icon {
+	position: absolute;
+	bottom: 0;
+	left: 35px;
+	padding: 0;
+	background: none;
+	border: 0;
+	outline: none;
+	cursor: pointer;
+}
+
+.page-header .icon img {
+	display: block;
+	height: 49px;
+	width: 49px;
+	margin-bottom: 9px;
+}
+
+.page-header .icon .btn-text {
+	font-family: Montserrat, Arial, Helvetica, sans-serif;
+	font-weight: 700;
+	color: #ffcd00;
+	font-size: 7px;
+	text-transform: uppercase;
+}
+
+.page-header .icon:active {
+	transform: translate(1px, 3px);
+}
+
+.page-header .text-info {
+	position: absolute;
+	right: 0;
+	bottom: 36px;
 	font-size: 20px;
+	line-height: 1;
 	max-width: 170px;
 	color: #ffcd00;
 }
 
-.page-header .intro-video .author {
+.page-header .author {
 	position: absolute;
-	right: 24px;
-	bottom: 35px;
+	right: 0;
+	bottom: 14px;
 	max-width: 170px;
 	color: #fff;
 }
 
-.page-header .intro-video .position {
+.page-header .position {
 	position: absolute;
-	right: 24px;
-	bottom: 17px;
+	right: 0;
+	bottom: 0;
 	max-width: 170px;
 	font-family: 'Myriad Pro';
 	font-weight: 400;
@@ -358,7 +397,7 @@ button:active {
 	box-sizing: border-box;
 	display: inline-block;
 	vertical-align: top;
-	width: 370px;
+	max-width: 370px;
 	height: 580px;
 	margin-bottom: 30px;
 	background-color: #f2f2f2;
@@ -387,9 +426,9 @@ button:active {
 }
 
 .page-content .info-block.border {
-	width: 362px;
-	height: 572px;
-	outline: 4px solid #ffcd00;
+	width: 370px;
+	height: 580px;
+	border: 4px solid #ffcd00;
 	border-radius: 1px;
 	box-shadow: 0 0 20px #fbd951;
 	background-color: #fff;
@@ -446,11 +485,6 @@ button:active {
 }
 
 /* ---------------------SECOND BLOCK------------------- */
-
-.page-content .info-block.border h3 {
-	text-align: center;
-	font-size: 22px;
-}
 
 .page-content .info-block .btn[data-icon='apple']::before {
 	background: url(../images/icon-appstore.png) no-repeat 0 0;
@@ -794,13 +828,13 @@ button:active {
 }
 
 .page-wrapper .business .btns {
-	width: 100%;
+	padding: 28px 0 0 24px;
 	text-align: right;
 }
 
 .page-wrapper .business .btns .btn {
 	position: relative;
-	margin: 28px 0 0 24px;
+	margin: 0;
 	width: 100%;
 	text-align: left;
 	padding-left: 40px;
@@ -906,32 +940,149 @@ button:active {
 	background-image: url(../images/icon-platforms-5.png);
 }
 
+.page-wrapper .page-footer {
+	background-color: #141414;
+	font-family: 'Proxima Nova', Arial, Helvetica, sans-serif;
+	font-weight: 400;
+	color: #646464;
+	font-size: 14px;
+	line-height: 22px;
+	padding-top: 40px;
+	padding-bottom: 105px;
+}
+
+.page-wrapper .page-footer .content-wrapper {
+	text-align: left;
+	padding: 0 10px;
+}
+
+.page-wrapper .page-footer .legal {
+	padding-bottom: 35px;
+}
+
+.page-wrapper .page-footer .about-us {
+	padding-bottom: 35px;
+}
+
+.page-wrapper .page-footer .about-us p {
+	max-width: 360px;
+	margin: 35px 0;
+}
+
+.page-wrapper .page-footer .contacts {
+	padding-bottom: 84px;
+}
+
+.page-wrapper .page-footer .contacts h3 {
+	font-family: Montserrat, Arial, Helvetica, sans-serif;
+	margin-bottom: 30px;
+}
+
+.page-wrapper .page-footer .contacts .email {
+	color: #fff;
+}
+
+.page-wrapper .page-footer .contacts .phone {
+	font-weight: 700;
+	line-height: 43px;
+	color: #ffc733;
+}
+
+.page-wrapper .page-footer .fca {
+	padding-bottom: 64px;
+}
+
+.page-wrapper .page-footer .pay {
+	font-size: 0;
+	padding-bottom: 64px;
+}
+
+.page-wrapper .page-footer .pay .icon {
+	display: inline-block;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	background: no-repeat 0 0;
+}
+
+.page-wrapper .page-footer .pay .icon.mastercard {
+	background-image: url(../images/icon-footer-mastercard.png);
+	width: 150px;
+	height: 40px;
+}
+
+.page-wrapper .page-footer .pay .icon.visa {
+	background-image: url(../images/icon-footer-visa.png);
+	width: 70px;
+	height: 40px;
+}
+
+.page-wrapper .page-footer .pay .icon.skrill {
+	background-image: url(../images/icon-footer-skrill.png);
+	width: 70px;
+	height: 40px;
+}
+
+.page-wrapper .page-footer .pay .icon.bank-transfer {
+	background-image: url(../images/icon-footer-bank.png);
+	width: 95px;
+	height: 40px;
+}
+
+.page-wrapper .page-footer .pay .icon.union-pay {
+	background-image: url(../images/icon-footer-unionpay.png);
+	width: 63px;
+	height: 40px;
+}
+
+.page-wrapper .page-footer .pay .icon.neteller {
+	background-image: url(../images/icon-footer-neteller.png);
+	width: 103px;
+	height: 40px;
+}
+
+.page-wrapper .page-footer .disclaimer {
+	font-family: 'Myriad Pro';
+}
+
+.page-wrapper .page-footer .copyright {
+	color: #3d3d3d;
+}
+
 @media (min-width: 793px) {
 	.content-wrapper {
-		border-left-width: 4px;
-		border-right-width: 4px;
-	}
-
-	.page-wrapper .benefit {
-		width: 33%;
-	}
-
-	.page-wrapper .benefits .content-wrapper {
-		text-align: center;
-	}
-
-	.page-header .intro-video {
-		background: none;
+		border-left-width: 0;
+		border-right-width: 0;
 	}
 
 	.page-header {
-		height: 900px;
+		min-height: 900px;
 		background: url(../images/bg-header-tablet.png) no-repeat center center;
 		background-size: cover;
 	}
 
-	.page-content .info-block:nth-child(1) {
-		margin-top: -24px;
+	.page-header .hamburger {
+		margin-left: 15px;
+	}
+
+	.page-header h1 {
+		font-size: 70px;
+		max-width: 420px;
+		margin-left: 14px;
+		margin-bottom: 75px;
+	}
+
+	.page-header p {
+		max-width: 380px;
+		margin-left: 14px;
+		padding: 0;
+	}
+
+	.page-header .btn-header {
+		margin-left: 14px;
+	}
+
+	.page-header .intro-video {
+		display: none;
 	}
 
 	.page-header .btn-page-header {
@@ -960,15 +1111,24 @@ button:active {
 		border: 3px solid rgba(255, 205, 0, 0.5);
 	}
 
-	.page-header .position {
-		bottom: 184px;
+	.page-content .info-block.border,
+	.page-content .info-block:nth-child(1) {
+		margin-top: -24px;
+	}
+
+	.page-wrapper .benefit {
+		width: 33%;
+	}
+
+	.page-wrapper .benefits .content-wrapper {
+		text-align: center;
 	}
 }
 
 @media (min-width: 1167px) {
 	.page-header {
 		height: 900px;
-		background: url(../images/bg-page-header-desktop.png) no-repeat 0 0;
+		background: url(../images/bg-header-desktop.png) no-repeat 0 0;
 		background-size: 100% 100%;
 	}
 
