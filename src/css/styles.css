@@ -392,6 +392,11 @@ button:active {
 	background-color: #fff;
 }
 
+.page-content .container {
+	display: inline-block;
+	width: 100%;
+}
+
 .page-content .info-block,
 .page-content .info-block.border {
 	position: relative;
@@ -408,6 +413,8 @@ button:active {
 	color: #979797;
 	overflow: hidden;
 	padding: 35px 40px 0;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .page-content h2::before {
@@ -512,7 +519,8 @@ button:active {
 
 /* ----------------------SECTION-ABOUT------------------ */
 .page-wrapper .about {
-	background: url(../images/bg-about.png) no-repeat -400px 0;
+	background: url(../images/bg-about.png) no-repeat center center;
+	background-size: cover;
 }
 
 .page-wrapper .about .content-wrapper {
@@ -1064,13 +1072,13 @@ button:active {
 
 	.page-header h1 {
 		font-size: 70px;
-		max-width: 420px;
+		width: 50%;
 		margin-left: 14px;
 		margin-bottom: 75px;
 	}
 
 	.page-header p {
-		max-width: 380px;
+		max-width: 50%;
 		margin-left: 14px;
 		padding: 0;
 	}
@@ -1085,6 +1093,22 @@ button:active {
 
 	.page-header .video-control {
 		display: block;
+		width: 300px;
+		right: 0;
+		bottom: 250px;
+	}
+
+	.page-header .video-control .icon {
+		left: 10px;
+	}
+
+	.page-header .video-control .icon img {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.page-header .video-control .btn-text {
+		font-size: 10px;
 	}
 
 	.page-header .btn-page-header {
@@ -1113,9 +1137,27 @@ button:active {
 		border: 3px solid rgba(255, 205, 0, 0.5);
 	}
 
+	.page-content .content-wrapper {
+		font-size: 0;
+	}
+
+	.page-content .container {
+		width: 50%;
+	}
+
 	.page-content .info-block.border,
 	.page-content .info-block {
 		top: -24px;
+	}
+
+	.page-wrapper .guide {
+		background: url(../images/bg-guide-tablet.png) no-repeat center top;
+		background-size: contain;
+		background-color: #fff;
+	}
+
+	.page-wrapper .guide .text {
+		margin-top: 420px;
 	}
 
 	.page-wrapper .benefit {
@@ -1132,5 +1174,22 @@ button:active {
 		height: 900px;
 		background: url(../images/bg-header-desktop.png) no-repeat 0 0;
 		background-size: 100% 100%;
+	}
+
+	.page-header .btns {
+		display: none;
+	}
+
+	.page-header .video-control {
+		display: none;
+	}
+
+	.page-content .container {
+		width: 33%;
+	}
+
+	.page-content .info-block.border,
+	.page-content .container:nth-child(5) .info-block {
+		top: -55px;
 	}
 }
