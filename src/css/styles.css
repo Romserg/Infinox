@@ -916,6 +916,38 @@ article .btns {
 	}
 }
 
+@media (min-width: 1167px) {
+	.guide {
+		background: url(../images/bg-guide-desktop.png) no-repeat top;
+		background-size: cover;
+		background-color: #fff;
+		min-height: 900px;
+	}
+
+	.guide h2 {
+		padding-top: 165px;
+	}
+
+	.guide h2::after {
+		top: 135px;
+	}
+
+	.guide .text {
+		margin-top: 42px;
+	}
+
+	.guide p {
+		margin-top: 55px;
+		width: 50%;
+	}
+
+	.guide .btns {
+		width: 50%;
+		text-align: left;
+		bottom: 55px;
+	}
+}
+
 /* -----------------------SECTION-FEEDBACK------------------- */
 
 .feedback {
