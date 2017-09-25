@@ -345,7 +345,7 @@ article .btns {
 .page-header .btn-header .btntext,
 .page-header .btn-header .btntextopt {
 	text-transform: uppercase;
-	font-family: 'Proxima Nova';
+	font-family: 'Proxima Nova', Arial, Helvetica, sans-serif;
 	font-size: 16px;
 	font-weight: 700;
 }
@@ -780,7 +780,7 @@ article .btns {
 }
 
 .about .items {
-	font-family: 'Proxima Nova';
+	font-family: 'Proxima Nova', Arial, Helvetica, sans-serif;
 	font-weight: 700;
 	color: #fff;
 	padding-left: 0;
@@ -798,7 +798,7 @@ article .btns {
 }
 
 .about .item .colortext {
-	font-family: 'Proxima Nova';
+	font-family: 'Proxima Nova', Arial, Helvetica, sans-serif;
 	font-weight: 700;
 	font-size: 30px;
 	line-height: 23px;
@@ -880,7 +880,7 @@ article .btns {
 }
 
 .guide .btns .description {
-	font-family: 'Proxima Nova';
+	font-family: 'Proxima Nova', Arial, Helvetica, sans-serif;
 	font-weight: 400;
 	font-size: 12px;
 	line-height: 22px;
@@ -1386,41 +1386,39 @@ article .btns {
 	display: inline-block;
 	margin-right: 10px;
 	margin-bottom: 10px;
-	background: no-repeat 0 0;
+}
+
+.page-footer .pay .icon img {
+	display: block;
+	width: 100%;
 }
 
 .page-footer .pay .icon.mastercard {
-	background-image: url(../images/icon-footer-mastercard.png);
 	width: 150px;
 	height: 40px;
 }
 
 .page-footer .pay .icon.visa {
-	background-image: url(../images/icon-footer-visa.png);
 	width: 70px;
 	height: 40px;
 }
 
 .page-footer .pay .icon.skrill {
-	background-image: url(../images/icon-footer-skrill.png);
 	width: 70px;
 	height: 40px;
 }
 
 .page-footer .pay .icon.bank-transfer {
-	background-image: url(../images/icon-footer-bank.png);
 	width: 95px;
 	height: 40px;
 }
 
 .page-footer .pay .icon.union-pay {
-	background-image: url(../images/icon-footer-unionpay.png);
 	width: 63px;
 	height: 40px;
 }
 
 .page-footer .pay .icon.neteller {
-	background-image: url(../images/icon-footer-neteller.png);
 	width: 103px;
 	height: 40px;
 }
