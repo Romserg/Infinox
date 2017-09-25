@@ -1386,41 +1386,8 @@ article .btns {
 	display: inline-block;
 	margin-right: 10px;
 	margin-bottom: 10px;
-}
-
-.page-footer .pay .icon img {
-	display: block;
-	width: 100%;
-}
-
-.page-footer .pay .icon.mastercard {
-	width: 150px;
 	height: 40px;
-}
-
-.page-footer .pay .icon.visa {
-	width: 70px;
-	height: 40px;
-}
-
-.page-footer .pay .icon.skrill {
-	width: 70px;
-	height: 40px;
-}
-
-.page-footer .pay .icon.bank-transfer {
-	width: 95px;
-	height: 40px;
-}
-
-.page-footer .pay .icon.union-pay {
-	width: 63px;
-	height: 40px;
-}
-
-.page-footer .pay .icon.neteller {
-	width: 103px;
-	height: 40px;
+	width: auto;
 }
 
 .page-footer .disclaimer {
